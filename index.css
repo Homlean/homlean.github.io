@@ -35,14 +35,14 @@ h1, h2, h3, h4, h5, h6 {
   height: 220px;
   position: relative;
   border-top: 1px solid #fafafa;
-  margin: 50px auto;
+  margin: 120px auto;
   border-radius: 8px;
   box-shadow: 0 1px 4px #999, 0 20px 50px rgba(50, 50, 50, 0.2);
   background: url('img/splash.png') no-repeat center -100px, url('img/paper_light.jpg') left -50px #e5e5e5;
 }
 
 #ticket h1 {
-  margin: 120px 0 0 30px;
+  margin: 80px 0 0 30px;
   font-size: 54px;
   line-height: 1em;
   text-shadow: 1px 1px 0 #ddd, 1px 2px 0 #afafaf, 2px 3px 0 #a9a9a9, 2px 4px 0 #a3a3a3, 3px 5px 0 #999, 3px 6px 0 #757575, 3px 6px 2px #777, 3px 6px 6px #777, 3px 6px 15px #777;
