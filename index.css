@@ -6,13 +6,7 @@ h1, h2, h3, h4, h5, h6 {
   word-spacing: 2px;
 }
 
-#background {
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+body {
   color: #fff;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
   background-color: #3e404a;
