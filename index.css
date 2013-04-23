@@ -1,0 +1,112 @@
+h1, h2, h3, h4, h5, h6 {
+  color: #444;
+  font-weight: normal;
+  font-family: BebasNeue, sans-serif;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+  word-spacing: 2px;
+}
+
+#background {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
+  background-color: #3e404a;
+  background-image: linear-gradient(rgba(255, 255, 255, .05) 2px, transparent 2px), linear-gradient(90deg, rgba(255, 255, 255, .04) 2px, transparent 2px), linear-gradient(rgba(255, 255, 255, .03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .03) 1px, transparent 1px), linear-gradient(0deg, rgba(0, 0, 0, .3) 0, transparent 100px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px, 100% 100%;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px, center bottom;
+}
+
+#octodex {
+  display: block;
+  height: 260px;
+  width: 260px;
+  border-radius: 130px;
+  box-shadow: 0 0 0 7px #ccc;
+  margin: 100px auto 0;
+}
+
+#ticket {
+  width: 800px;
+  height: 220px;
+  position: relative;
+  border-top: 1px solid #fafafa;
+  margin: 50px auto;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px #999, 0 20px 50px rgba(50, 50, 50, 0.2);
+  background: url('img/splash.png') no-repeat center -100px, url('img/paper_light.jpg') left -50px #e5e5e5;
+}
+
+#ticket h1 {
+  margin: 80px 0 0 30px;
+  font-size: 54px;
+  line-height: 1em;
+  text-shadow: 1px 1px 0 #ddd, 1px 2px 0 #afafaf, 2px 3px 0 #a9a9a9, 2px 4px 0 #a3a3a3, 3px 5px 0 #999, 3px 6px 0 #757575, 3px 6px 2px #777, 3px 6px 6px #777, 3px 6px 15px #777;
+}
+
+.collapsar {
+  position: absolute;
+  top: 25px;
+  left: 100%;
+  margin-left: -60px;
+}
+
+.collapsar a {
+  position: relative;
+  display: block;
+  width: 64px;
+  height: 68px;
+  margin: 0 0 10px 0;
+  overflow: hidden;
+  text-indent: -999em;
+  background: url('img/stamps.png') no-repeat -64px 0;
+}
+
+.collapsar a .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 64px;
+  height: 68px;
+  z-index: 10;
+  overflow: hidden;
+  background: url('img/stamps.png') no-repeat 0 0;
+}
+
+.collapsar a.twitter {
+  background-position: -64px -68px;
+}
+
+.collapsar a.twitter .icon {
+  background-position: 0 -68px;
+}
+
+.collapsar a, .collapsar a .icon {
+  -webkit-transition: width 300ms ease-out;
+  transition: width 300ms ease-out;
+}
+
+.collapsar a .icon span {
+  display: block;
+  position: absolute;
+  top: 1px;
+  right: 0;
+  width: 12px;
+  height: 66px;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAABCAYAAADq6085AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpiZGBgYIRiJiBmBmI2IGYFYg4ohvH5gZgdIMAABI0ARe5et3IAAAAASUVORK5CYII=') repeat-y right top;
+}
+
+@media only screen and (min-width: 1100px) {
+  .collapsar a:hover {
+    width: 130px;
+  }
+
+  .collapsar a:hover .icon {
+    width: 0;
+  }
+}
